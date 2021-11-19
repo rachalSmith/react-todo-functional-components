@@ -5,6 +5,7 @@ A small React App created to practice functional component with hooks and sendin
 ## Description
 
 A simple to-do app that can add and delete tasks. 
+
 JSON-server is used as a mock backend. 
 
 ### Usage

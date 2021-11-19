@@ -1,8 +1,16 @@
 {
   "toDoList": [
     {
-      "text": "vfd",
+      "formText": "make dinner ",
       "id": 1
+    },
+    {
+      "formText": "take the cat to vet",
+      "id": 2
+    },
+    {
+      "formText": "water plants",
+      "id": 3
     }
   ]
 }

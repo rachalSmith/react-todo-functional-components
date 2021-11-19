@@ -9,18 +9,18 @@ JSON-server is used as a mock backend.
 
 ### Usage
 
-### Install dependencies
+#### Install dependencies
 
 ```bash
 npm install
 ```
-### Run React dev server (http://localhost:3000)
+#### Run React dev server (http://localhost:3000)
 
 ```bash
 npm start
 ```
 
-### Run the JSON server (http://localhost:5000)
+#### Run the JSON server (http://localhost:5000)
 
 ```bash
 npm run server

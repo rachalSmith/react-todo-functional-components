@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 function App() {
 // State and set state of todo list
-  const [ toDoItems, setToDoItem] = useState([]);
+  const [toDoItems, setToDoItem] = useState([]);
 
 
 // Displays todo list from mock backend (json-server)
@@ -38,9 +38,9 @@ const addToDoItem = async (item) => {
   });
 
   const data = await response.json();
-  console.log(data)
+  console.log(data);
 
-  setToDoItem([...toDoItems, data])
+  setToDoItem([...toDoItems, data]);
 }
 
 
@@ -58,6 +58,7 @@ const deleteToDoItem = async (id) => {
 
   return (
     <div className='container'>
+      <div className='triangle'></div>
       <Header />
       <AddToDo onAdd={addToDoItem}/>
       <ToDoList toDoItems={toDoItems} onDelete={deleteToDoItem}/>

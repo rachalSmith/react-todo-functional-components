@@ -12,69 +12,86 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
-  padding: 30px;
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15%;
+  min-height: 80vh;
+  max-width: 80vw;
+  padding: 8%;
+  border: solid 8px #53BAC1;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.triangle {
+  z-index: -1;
+  width: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 86.6px;
+  border-color: transparent transparent transparent #53BAC1;
+  position: absolute;
+  left: 15%;
+  top: auto;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #B9732F , #FFFFFF);
+  border-image-slice: 1;
 }
 
-.btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
+.button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #4ac596;
+  color: #FFFFFF;
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 15px;
   font-family: inherit;
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  max-width: 40vw;
+  min-width: 33vw;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.btn:focus {
+.button:active {
+  transform: scale(0.96);
+}
+
+.form-input {
+  border: rgb(173, 171, 171) solid 2px;
+  font-size: 15px;
   outline: none;
 }
 
-.btn:active {
-  transform: scale(0.98);
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
 .task {
-  background: #f4f4f4;
+  background: #EDF6FF;
+  min-width: 55vw;
   margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+  padding: 3%;
 }
-
 
 .task h3 {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+font-size: 18px;
+font-weight: normal;
 }
 
-.deleteBtn {
+.deleteButton {
   display: flex;
   align-self: flex-end;
   border: none;
   font-weight: 900;
-  color: rgb(201, 12, 12);
+  color: rgb(175, 12, 12);
   /* Code below removes all button styling */
   background: none;
 	border: none;
@@ -85,30 +102,38 @@ justify-content: space-between;
 }
 
 .add-form {
-  margin-bottom: 40px;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
 }
 
 .form-control {
-  margin: 20px 0;
-}
-
-.form-control label {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-control input {
   width: 100%;
   height: 40px;
   margin: 5px;
-  padding: 3px 7px;
-  font-size: 17px;
+  padding: 6px 7px;
 }
 
-.form-control-check label {
-  flex: 1;
-}
+@media only screen and (min-width: 660px) {
+  .container {
+    max-width: 50vw;
+    margin-top: 3%;
+    margin-left: 25%;
+    padding: 3%;
+  }
 
-.form-control-check input {
-  flex: 2;
-  height: 20px;
+  .triangle {
+    border-width: 75px 0 75px 129.9px;
+    left: 25%;
+  }
+
+  .task {
+    min-width: 45vw;
+  }
+
 }

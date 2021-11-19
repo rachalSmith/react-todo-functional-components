@@ -4,10 +4,10 @@
 const ToDo = ({ toDo, onDelete }) => {
     return (
         <div className='task'>
-            <h3 >{toDo.text}
+            <h3 >{toDo.formText}
                 <button
                     onClick={() => onDelete(toDo.id)}
-                    className='deleteBtn'>
+                    className='deleteButton'>
                     x
                 </button>
             </h3>

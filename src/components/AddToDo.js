@@ -1,7 +1,7 @@
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 // AddToDO component takes in prop (addToDo) from App.js
-
 const AddToDo = ({ onAdd }) => {
     const [formText, setFormText] = useState();
 
@@ -45,3 +45,7 @@ const AddToDo = ({ onAdd }) => {
 }
 
 export default AddToDo;
+
+AddToDo.propTypes = {
+    onAdd : PropTypes.func.isRequired
+}

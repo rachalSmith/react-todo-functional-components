@@ -1,5 +1,5 @@
-// toDo props are passed from App.js, through ToDo.js
-// onClick action passed up through ToDo.js to App.js, where it has access to the state.
+import PropTypes from 'prop-types';
+
 
 const ToDo = ({ toDo, onDelete }) => {
     return (
@@ -16,3 +16,8 @@ const ToDo = ({ toDo, onDelete }) => {
 }
 
 export default ToDo;
+
+ToDo.propTypes = {
+    toDo : PropTypes.object.isRequired,
+    onDelete : PropTypes.func.isRequired
+}

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 // ToDoList component is a container for ToDo component.
 // ToDoList passes down props (of todo initial state and delete functionality) to each todo item from App.js.
 
@@ -17,3 +19,8 @@ const ToDoList = ({ toDoItems, onDelete }) => {
 }
 
 export default ToDoList;
+
+ToDoList.propTypes = {
+    toDoItems : PropTypes.array.isRequired,
+    onDelete : PropTypes.func.isRequired
+}

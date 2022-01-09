@@ -12,6 +12,8 @@ JSON-server is used as a mock backend.
 
 #### Install dependencies
 
+Manually tested and working with Node version: 16.13.0
+
 ```bash
 npm install
 ```

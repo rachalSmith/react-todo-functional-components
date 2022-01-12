@@ -47,5 +47,5 @@ const AddToDo = ({ onAdd }) => {
 export default AddToDo;
 
 AddToDo.propTypes = {
-    onAdd : PropTypes.func.isRequired
+    onAdd : PropTypes.func
 }

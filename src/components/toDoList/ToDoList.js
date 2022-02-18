@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 
-// ToDoList component is a container for ToDo component.
-// ToDoList passes down props (of todo initial state and delete functionality) to each todo item from App.js.
+// toDoItems state fetched from database through App.js, mapped
+// and each item in the list is given id, the text and delete functionality,
+// which is passed as props to toDO child component.
 
 import ToDo from '../toDo/ToDo'
 
 const ToDoList = ({ toDoItems, onDelete }) => {
     return (
-        <div>
+        <div data-testid="toDoItems">
             {toDoItems.map((toDo) => (
             <ToDo key={toDo.id}
                   toDo={toDo}

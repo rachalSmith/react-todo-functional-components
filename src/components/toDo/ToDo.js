@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+// formText is the key in the from the database
+
 
 const ToDo = ({ toDo, onDelete }) => {
     return (

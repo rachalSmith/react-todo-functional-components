@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import ToDoList from "./components/ToDoList";
-import AddToDo from "./components/AddToDo";
+import Header from "./components/header/Header";
+import ToDoList from "./components/toDoList/ToDoList";
+import AddToDo from "./components/addToDo/AddToDo";
 
 import { useState, useEffect } from "react";
 
